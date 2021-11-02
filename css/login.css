@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+:root{
+    /*colors*/
+    --very-light-pink: #C7C7C7;
+    --white: #FFFFFF;
+    --text-input-field: #F7F7F7;
+    --black: #000000;
+    --hospital-green: #ACD9B2;
+    --dark: #232830;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+  }
+  
+  li {
+    float: left;
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+.page_name {
+    margin-left: 110px;
+    color: var(--black);
+}
+
+.fa-lock{
+    padding-right: 5px;
+    color: var(--black);
+}
+
+.clock{
+    color: var(--black);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.icons{
+    color: var(--black);
+    padding-top: 10px;
+    padding-left: 210px;
+}
+
+.fa-signal{
+    margin-right: 5px;
+}
+
+.fa-wifi{
+    margin-right: 5px;
+}
+
+.close-icon{
+    margin-left: 350px;
+    padding-top: 10px;
+    color: var(--text-input-field);
+}
+
+.main-tittle{
+    padding-top: 0px;
+    width: 100%;
+}
+
+.main-tittle img{
+    width: 150px;
+    margin-left: 120px;
+    padding-top: 50px;
+}
+
+.form-main{
+    padding-top: 30px;
+    margin-left: 15px;
+}
+
+.form-main p{
+    color: var(--black);
+}
+
+.form-main .email{
+    background-color: var(--text-input-field);
+    border-color: var(--text-input-field);
+    border-radius: 8px;
+    height: 30px;
+    width: 340px;
+}
+
+.form-main .password{
+    background-color: var(--text-input-field);
+    border-color: var(--text-input-field);
+    border-radius: 8px;
+    height: 30px;
+    width: 340px;
+}
+
+.button-login-container{
+    padding-top: 35px;
+}
+
+.button-login{
+    font-size: 20px;
+    color: var(--white);
+    margin-left: 15px;
+    width: 340px;
+    height: 50px;
+    background-color: var(--hospital-green);
+    border-color: var(--hospital-green);
+    border-radius: 8px;
+}
+
+.link-container{
+    padding-top: 20px;
+    margin-left: 100px;
+}
+
+.link-container .link{
+    text-decoration: none;
+    color: var(--hospital-green);
+}
+
+.button-signup-container{
+    padding-top: 200px;
+}
+
+.button-signup-container .buton-singup{
+    font-size: 20px;
+    color: var(--hospital-green);
+    margin-left: 15px;
+    width: 340px;
+    height: 50px;
+    background-color: var(--white);
+    border-color: var(--hospital-green);
+    border-radius: 8px;
+}
