@@ -1,151 +1,161 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
-
-:root{
-    /*colors*/
-    --very-light-pink: #C7C7C7;
-    --white: #FFFFFF;
-    --text-input-field: #F7F7F7;
-    --black: #000000;
-    --hospital-green: #ACD9B2;
-    --dark: #232830;
-}
-
-body {
+@import "styles.css";
+            
+*{
     margin: 0;
     padding: 0;
+}
+
+
+body {
     font-family: 'Quicksand', sans-serif;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    border: 1px solid #e7e7e7;
-    background-color: #f3f3f3;
-  }
-  
-  li {
-    float: left;
-    display: block;
-    color: #666;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
 
-.page_name {
-    margin-left: 110px;
-    color: var(--black);
+header{
+    background-color: var(--text-input-field);
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
-.fa-lock{
-    padding-right: 5px;
-    color: var(--black);
+nav{
+    display: flex;
+    justify-content: space-between;
 }
 
 .clock{
-    color: var(--black);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 22px;
-    padding-top: 10px;
-    padding-left: 20px;
+    font-weight: bold;
+    padding-top: 8px;
+    margin-left: 10px;
 }
 
 .icons{
+    padding-top: 8px;
+    margin-right: 10px;
+}
+
+.page_name{
+    background-color: var(--text-input-field);
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--black);
-    padding-top: 10px;
-    padding-left: 210px;
 }
 
-.fa-signal{
-    margin-right: 5px;
+.page_name .fa-lock{
+    padding-right: 5px;
 }
 
-.fa-wifi{
-    margin-right: 5px;
+.main-container{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+    min-height: 100vh;
+    justify-content: space-between;
 }
 
 .close-icon{
-    margin-left: 350px;
-    padding-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 70px;
+}
+
+.close-icon span{
     color: var(--text-input-field);
 }
 
-.main-tittle{
-    padding-top: 0px;
-    width: 100%;
-}
-
-.main-tittle img{
-    width: 150px;
-    margin-left: 120px;
+.main-tittle-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-top: 50px;
 }
 
-.form-main{
-    padding-top: 30px;
-    margin-left: 15px;
+.main-tittle-container img{
+    width: 250px;
+    height: 100px;
 }
 
-.form-main p{
+.form-main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.form{
+    width: 100%;
+}
+
+.form p{
+    font-weight: bold;
     color: var(--black);
+    margin-top: 20px;
 }
 
-.form-main .email{
+.form input{
+    width: 100%;
+    height: 40px;
     background-color: var(--text-input-field);
-    border-color: var(--text-input-field);
-    border-radius: 8px;
-    height: 30px;
-    width: 340px;
-}
-
-.form-main .password{
-    background-color: var(--text-input-field);
-    border-color: var(--text-input-field);
-    border-radius: 8px;
-    height: 30px;
-    width: 340px;
+    border: none;
+    border-radius: 15px;
+    font-size: 14pt;
+    padding-top: 3px;
+    padding-left: 10px;
+    font-weight: 400;
+    margin-top: 10px;
 }
 
 .button-login-container{
-    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 40px;
 }
 
 .button-login{
-    font-size: 20px;
     color: var(--white);
-    margin-left: 15px;
-    width: 340px;
-    height: 50px;
-    background-color: var(--hospital-green);
-    border-color: var(--hospital-green);
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    background-color: #ACD9B2;
     border-radius: 8px;
+    border: none;
+    height: 60px;
 }
 
 .link-container{
-    padding-top: 20px;
-    margin-left: 100px;
+    padding-top: 30px;
 }
 
 .link-container .link{
     text-decoration: none;
     color: var(--hospital-green);
+    font-weight: bold;
 }
 
 .button-signup-container{
-    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 150px;
 }
 
-.button-signup-container .buton-singup{
+.button-signup-container button{
     font-size: 20px;
     color: var(--hospital-green);
     margin-left: 15px;
-    width: 340px;
-    height: 50px;
+    width: 100%;
+    height: 60px;
     background-color: var(--white);
     border-color: var(--hospital-green);
     border-radius: 8px;
+    border: 2px solid var(--hospital-green);
+    font-weight: bold;
 }
